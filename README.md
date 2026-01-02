@@ -36,7 +36,6 @@ It includes authentication pages, a price estimator, and a scalable UI architect
 - Tailwind CSS
 - 
 ---
-
 ## 📂 Project Structure
 
 src/
@@ -73,8 +72,8 @@ src/
 ├── utils/
 │ └── helpers.js
 │
-├── main.jsx
 ├── App.jsx
+├── main.jsx
 ├── tailwind.css
 └── index.css
 
