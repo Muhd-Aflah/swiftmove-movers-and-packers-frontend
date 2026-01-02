@@ -34,9 +34,7 @@ It includes authentication pages, a price estimator, and a scalable UI architect
 - Vite
 - React Router DOM
 - Tailwind CSS
-- Radix UI
-- Class Variance Authority (CVA)
-
+- 
 ---
 
 ## 📂 Project Structure
