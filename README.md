@@ -1,9 +1,14 @@
 # 🚚 SwiftMove Frontend
 
-SwiftMove is a modern, responsive logistics and freight management frontend built with **React + Vite + Tailwind CSS**.  
+SwiftMove is a modern, responsive logistics and freight management frontend built with **React + Vite **.  
 It includes authentication pages, a price estimator, and a scalable UI architecture ready for backend integration.
 
+## 📌 Project Status: **In Development**
+
+> ⚠️ This project is currently under active development.Features are being implemented step by step.
+
 ---
+
 
 ## ✨ Features
 
