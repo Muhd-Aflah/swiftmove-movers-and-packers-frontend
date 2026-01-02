@@ -39,12 +39,13 @@ It includes authentication pages, a price estimator, and a scalable UI architect
 
 ## 📂 Project Structure
 
-rc/
+src/
 ├── components/
 │ ├── layout/
 │ │ ├── Header.jsx
 │ │ ├── Footer.jsx
 │ │ └── Layout.jsx
+│ │
 │ └── ui/
 │ ├── button.jsx
 │ ├── label.jsx
@@ -66,7 +67,14 @@ rc/
 ├── router/
 │ └── index.jsx
 │
+├── services/
+│ └── api.js
+│
+├── utils/
+│ └── helpers.js
+│
 ├── main.jsx
+├── App.jsx
 ├── tailwind.css
 └── index.css
 
