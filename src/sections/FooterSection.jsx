@@ -1,6 +1,6 @@
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
-
+import { Link } from "react-router-dom";
 
 const locationData = [
   {
@@ -78,20 +78,28 @@ export const FooterSection = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-[30px]">
-        <Button
-          variant="outline"
-          className="px-6 sm:px-8 lg:px-[50px] py-3 sm:py-4 lg:py-[25px] h-auto rounded-xl border-[#2c2d5b] hover:bg-transparent w-full sm:w-auto"
-        >
-          <span className="[font-family:'Lato',Helvetica] font-extrabold text-simblue text-base sm:text-lg lg:text-lg text-center tracking-[0] leading-[normal]">
-            Request Quote
-          </span>
-        </Button>
-        <Button className="px-6 sm:px-8 lg:px-[50px] py-3 sm:py-4 lg:py-[25px] h-auto bg-simblue hover:bg-simblue/90 rounded-xl w-full sm:w-auto">
-          <span className="[font-family:'Lato',Helvetica] font-extrabold text-[#ffffff] text-base sm:text-lg lg:text-lg text-center tracking-[0] leading-[normal]">
-            Join Now
-          </span>
-        </Button>
+        {/* REQUEST QUOTE */}
+        <Link to="/request-quote" className="w-full sm:w-auto">
+          <Button
+            variant="outline"
+            className="px-6 sm:px-8 lg:px-[50px] py-3 sm:py-4 lg:py-[25px] h-auto rounded-xl border-[#2c2d5b] hover:bg-transparent w-full"
+          >
+            <span className="[font-family:'Lato',Helvetica] font-extrabold text-simblue text-base sm:text-lg text-center">
+              Request Quote
+            </span>
+          </Button>
+        </Link>
+
+        {/* JOIN NOW */}
+        <Link to="/signup" className="w-full sm:w-auto">
+          <Button className="px-6 sm:px-8 lg:px-[50px] py-3 sm:py-4 lg:py-[25px] h-auto bg-simblue hover:bg-simblue/90 rounded-xl w-full">
+            <span className="[font-family:'Lato',Helvetica] font-extrabold text-white text-base sm:text-lg text-center">
+              Join Now
+            </span>
+          </Button>
+        </Link>
       </div>
+      
     </section>
   );
 };

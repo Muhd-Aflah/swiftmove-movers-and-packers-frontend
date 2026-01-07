@@ -8,7 +8,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="flex flex-col items-start gap-5 w-full lg:w-auto">
             <img
-              src="/gemini-generated-image-txpkkltxpkkltxpk-removebg-preview-2.png"
+              src="/swiftmove-logo.png"
               alt="SwiftMove"
               className="block h-10 sm:h-11 lg:h-12 w-auto max-w-[220px] object-contain"
             />
@@ -78,17 +78,11 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="flex flex-col items-center justify-center gap-6 sm:gap-[30px] pt-5 w-full">
-          <img className="w-full max-w-[600px] sm:max-w-[800px] lg:w-[1140px] h-[1.5px]" alt="Line" src="/line-10.svg" />
-
-          <div className="[font-family:'Lato',Helvetica] font-black text-lg sm:text-xl whitespace-nowrap flex items-center justify-center tracking-[0] leading-[normal]">
-            <img
-              src="/gemini-generated-image-txpkkltxpkkltxpk-removebg-preview-2.png"
-              alt="SwiftMove"
-              className="block h-8 sm:h-9 w-auto object-contain"
-            />
-          </div>
+        {/* COPYRIGHT */}
+        <div className="w-full mt-8 pt-4 border-t border-white/30">
+          <p className="text-center text-sm text-white opacity-80">
+            © {new Date().getFullYear()} SwiftMove. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

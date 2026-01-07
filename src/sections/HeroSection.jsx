@@ -1,52 +1,41 @@
 import { Button } from "../components/ui/button";
 
-
 export const HeroSection = () => {
   return (
-    <section className="relative w-full py-12 md:py-16 lg:py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
-          <div className="flex flex-col items-start justify-center gap-8 lg:gap-[50px] flex-1 w-full lg:w-auto">
-            <div className="flex flex-col items-start gap-6 w-full">
-              <h1 className="w-full [font-family:'Lato',Helvetica] font-normal text-3xl sm:text-4xl lg:text-[40px] tracking-[0] leading-tight lg:leading-10">
-                <span className="font-semibold text-[#141414] block">
-                  quick &amp; reliable{" "}
-                </span>
-                <span className="font-bold text-[#0088ff] text-4xl sm:text-5xl lg:text-5xl block">
-                  warehousing{" "}
-                </span>
-                <span className="font-bold text-[#0088ff] text-4xl sm:text-5xl lg:text-5xl block">and</span>
-                <span className="font-bold text-[#0088ff] text-4xl sm:text-5xl lg:text-5xl block">
-                  {" "}
-                  logistics{" "}
-                </span>
-                <span className="font-semibold text-[#141414] text-3xl sm:text-4xl lg:text-[40px] inline">solution</span>
-                <span className="font-bold text-[#141414] text-3xl sm:text-4xl lg:text-[40px] inline">.</span>
-              </h1>
+    <section className="w-full py-16">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
 
-              <p className="w-full [font-family:'Lato',Helvetica] font-normal text-[#333333] text-sm sm:text-base lg:text-sm tracking-[0] leading-[21px] lg:leading-[21px]">
-                ShipUp delivers an unparalleled customer service through dedicated
-                customer teams, engaged people working in an agile culture, and a
-                global footprint
-              </p>
-            </div>
+          {/* LEFT CONTENT */}
+          <div className="flex flex-col gap-6 max-w-xl">
+            <p className="text-sm font-semibold text-gray-600">
+              Quick & reliable
+            </p>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <Button className="bg-simblue hover:bg-simblue/90 rounded-xl px-8 py-4 h-auto w-full sm:w-auto">
-                <span className="[font-family:'Lato',Helvetica] font-extrabold text-[#ffffff] text-sm">
-                  Join Now
-                </span>
-              </Button>
-            </div>
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
+              Warehousing <br />
+              <span className="text-blue-500">and logistics</span> <br />
+              solution.
+            </h1>
+
+            <p className="text-gray-600 text-base">
+              ShipUp delivers unparalleled customer service through dedicated
+              teams, agile processes, and a global logistics footprint.
+            </p>
+
+          <Button className="px-7 sm:px-8 lg:px-[50px] py-3 sm:py-4 lg:py-[20px] h-auto bg-simblue hover:bg-simblue/90 rounded-xl w-[24px]">
+              Join Now
+            </Button>
           </div>
 
-          <div className="flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-end">
+          <div className="w-full flex justify-center lg:justify-end">
             <img
-              className="w-full max-w-[400px] sm:max-w-[500px] lg:w-[700px] lg:h-[594px] object-contain h-auto"
-              alt="Img"
               src="/91fa59e6781adbdced82e349bb595d99-1.png"
+              alt="Logistics illustration"
+              className="w-full max-w-md lg:max-w-2xl h-auto"
             />
           </div>
+
         </div>
       </div>
     </section>
